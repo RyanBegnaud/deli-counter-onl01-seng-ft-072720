@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require "pry"
 def line(katz_deli)
   if katz_deli.length == 0
@@ -30,4 +31,15 @@ def now_serving(new_array)
     new_array.shift
     
 end
+=======
+katz_deli = ["david, henry, henrich, apple, bottom"]
+def line(katz_deli)
+  new_array = []
+  if katz_deli.length == 0
+    puts "The line is currently empty."
+  elsif katz_deli.length <= 1 
+      katz_deli.each_with_index do |name, index|
+      puts "#{index}.  #{name}"
+   end
+>>>>>>> ae62183c05de0e352c222f83f3a55a4c809cf3e4
 end
